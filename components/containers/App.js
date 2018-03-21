@@ -11,13 +11,19 @@ export default class App extends Component {
 		super();
 
 		this.state = {
-			results: {}
+			results: {},
+			searchResults: ""
 		}
 	}
 
 	_handleSearch = (e) => {
 		console.log(e.target);
 		e.preventDefault();
+	}
+
+	//Responsible for catching updates to the state of the form
+	_handleItemUpdates = (event) => { 
+		this.setState({searchResults: event.target.value})
 	}
 
 	componentDidMount() {
@@ -33,8 +39,8 @@ export default class App extends Component {
 	render() {
 		return (
 			<div className="containerApp">
-				<SearchBar handleSearch={ this._handleSearch } />
-				<SearchItems />
+				<SearchBar handleSearch={ this._handleSearch } updateItems={this._handleItemUpdates } />
+				<SearchItems  searchResults={this.state.searchResults} />
 				<SearchResults results={ this.state.results } />
 			</div>
 		)
