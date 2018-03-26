@@ -8,10 +8,10 @@ export default class SearchResults extends Component {
 
 	render() {
 		let { results } = this.props;
-		console.log( results );
 		const listItems = results.data ? results.data.map( ( item ) => 
-			( <li key={`bleh_${Math.random() * (new Date())}`} className='search-results__list-item'>
-		 	{ item.title } </li> ) ) : null;
+			( <li key={ `bleh_${ Math.random() * (new Date()) }` } className='search-results__list-item'>
+		 	  { item.title } 
+		 	</li> ) ) : null;
 
 		return (
 			<div className='search-results'>

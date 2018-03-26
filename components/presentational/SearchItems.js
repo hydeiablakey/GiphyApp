@@ -6,7 +6,7 @@ export default class SearchItems extends Component {
 	render() {
 		return ( 
 				<div>
-				<p>Search Item: {this.props.searchResults}</p>
+				<p>Search Item: {this.props.searchItems}</p>
 
 
 				</div>
