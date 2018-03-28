@@ -19,7 +19,7 @@ export default class SearchResults extends Component {
 
 		return (
 			<div className='container-search-results'>
-				  <p className="search-title"> Let the GIFS Begin: {this.props.query} </p>
+				  <p className="search-title"> Let the GIFS Begin: <b>{this.props.query}</b> </p>
 				  <div className='search-results-list'>
 					{ listItems }
 				  </div>
