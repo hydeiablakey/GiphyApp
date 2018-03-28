@@ -1,4 +1,6 @@
 import React, { Component } from 'react'; 
+import SearchBar from '../presentational/SearchBar';
+
 
 
 export default class SearchResults extends Component {
@@ -8,17 +10,19 @@ export default class SearchResults extends Component {
 
 	render() {
 		let { results } = this.props;
+
 		const listItems = results.data ? results.data.map( ( item ) => 
-			( <li key={ `bleh_${ Math.random() * (new Date()) }` } className='search-results__list-item'>
-		 	  { item.title } 
-		 	</li> ) ) : null;
+			( <div key={ `fun_${ Math.random() * (new Date()) }` } className='search-results__list-item'>
+		 	  <img src={`${ item.images.original.url }`} />
+		 	</div> ) ) : null;
+
 
 		return (
-			<div className='search-results'>
-			  <p>Search Results</p>
-			  <ul className='search-results__list'>
-				{ listItems }
-			  </ul>
+			<div className='container-search-results'>
+				  <p className="search-title"> Let the GIFS Begin: {this.props.query} </p>
+				  <div className='search-results-list'>
+					{ listItems }
+				  </div>
 		    </div>
 		)
 	}

@@ -7,8 +7,6 @@ export default class SearchItems extends Component {
 		return ( 
 				<div>
 				<p>Search Item: {this.props.searchItems}</p>
-
-
 				</div>
 		)
 	}
