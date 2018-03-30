@@ -26,7 +26,7 @@ export default class App extends Component {
 			searchQuery: searchQuery
 		})
 
-		axios.get(`http://api.giphy.com/v1/gifs/search?q=${searchQuery}&api_key=UidqL9grHHxhpKkNEj34UYzWGlROX85q&fmt=json&limit=32`)
+		axios.get(`http://api.giphy.com/v1/gifs/search?q=${searchQuery}&api_key=UidqL9grHHxhpKkNEj34UYzWGlROX85q&fmt=json&limit=33`)
 		  .then( ( res ) => {
 		  	console.log(res);
 		  	this.setState({
