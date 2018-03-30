@@ -3,10 +3,6 @@ body {
 	  background: #355C7D; 
 	  animation: bg-change 10s infinite; 
 	  -webkit-animation: bg-change 10s infinite;
-	  -webkit-transition-property: bg-change;
-	  -webkit-transition-timing-function: ease-out;
-	  transition-property: bg-change; 
-	  transition-timing-function: ease-out; 
 	  font-family: 'Lato', sans-serif;
 
 }
@@ -19,7 +15,7 @@ body {
 	25% {background-color: #6C5B7B }
     50% {background-color: #C06C84 }	
     75% {background-color: #F67280 }
-    100% {background-color: #F68E80}
+    100% {background-color: #355C7D}
 
 }
 
@@ -28,13 +24,9 @@ body {
 	25% {background-color: #6C5B7B }
     50% {background-color: #C06C84 }	
     75% {background-color: #F67280 }
-    100% {background-color: #F68E80 }
+    100% {background-color: #355C7D }
 }
 
-
-.containerApp {
-
-}
 
 img {
 
@@ -63,6 +55,9 @@ img {
 	font-size: medium;
 }
 
+input:focus {
+	outline: none;
+}
 
 /* Attempt to make button gradient change
 @keyframes button-bg-change {
@@ -91,11 +86,11 @@ img {
 	border: 1px solid;
 	width: 90px;
 	position: relative;
-	bottom: -3px;
+	bottom: -2px;
 	height:34px;
-
-
 }
+
+
 /*
  * Search Results
  */
