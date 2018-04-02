@@ -37,20 +37,6 @@ export default class App extends Component {
 		  console.log(this.state.results);
 	}
 
-
-
-	// _handleInput = ( event ) => {
-
-	// 	const searchQuery = event.target.value;
-
-	// 	this.setState({
-	// 		searchQuery: searchQuery 
-	// 	});
-
-	// 	this._handleSearch(searchQuery);
-	// }
-
-
 	render() {
 		return (
 			<div className="containerApp">

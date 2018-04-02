@@ -33,12 +33,18 @@ img {
 	border: 1px solid;
 	width: 300px;
 	box-shadow: -2px 2px 28px 0px rgba(0, 0, 0, 0.57);
-	margin: 10px;
+	margin: 5px;
 
 }
 
+img:nth-child(even) {
+	height: 300px;
+}
+
+
 .containerSearchBar {
 	display:flex;
+	flex: 0;
 	justify-content: center;
 }
 
@@ -97,18 +103,20 @@ input:focus {
  * Search Results
  */
 
-.container-search-results {
-	margin: 10px;
-}
+
 
 .search-title {
 	text-align:center;
 
 }
+.container-search-results {
+
+}
 
 .search-results-list {
 	display: flex;
+	flex: auto;
 	flex-wrap: wrap;
 	justify-content:space-evenly; 
-	align-content: space-between;
+  	margin: 0 100px 0 100px; 
 }
