@@ -15,16 +15,17 @@ export default class SearchResults extends Component {
 		let { results } = this.props;
 		
 		// use ternary operation
-		const listItems = results ? results.map( ( item ) => (
+		const listItems = results.map( ( item ) => (
 			<SearchResultItem key={ `fun_${ Math.random() * (new Date()) }` } imageSrc={ item.images.original.url } />
-		) ) : null;
+		) );
 
 		return (
 			<div className='container-search-results'>
 				  <p className="search-title"> Let the GIFS Begin: <b>{this.props.query}</b> </p>
 				  <div className='search-results-list'>
 					{ listItems }
-					{ results ? <SearchResultLoader handleLoader={ this.props.handleLoader } /> : null }
+
+					{ results.length > 0 ? <SearchResultLoader handleLoader={ this.props.handleLoader } /> : null }
 				  </div>
 		    </div>
 		)

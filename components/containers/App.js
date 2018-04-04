@@ -18,19 +18,22 @@ export default class App extends Component {
 		}
 	}
 
+	_handleRequest = ( query, offset ) => {
+		axios.get(`http://api.giphy.com/v1/gifs/search?q=${ query }&api_key=${ API_KEY }&fmt=json&offset=${ offset }&limit=${ this.state.limit }`)
+			.then( ( res ) => {
+				this.setState({
+					results: this.state.results.concat( res.data.data )  // [].concat(['1', '2', '3']) // an array instead of object
+				});
+			})
+	} 
+
 	_handleSearch = ( event ) => {
 		event.preventDefault();
 		
 		// grab the search query
 		const searchQuery = event.target.getElementsByTagName('input')[0].value;
 
-		axios.get(`http://api.giphy.com/v1/gifs/search?q=${ searchQuery }&api_key=${ API_KEY }&fmt=json&offset=${ this.state.offset }&limit=${ this.state.limit }`)
-			.then( ( res ) => {
-				console.log(res);
-				this.setState({
-					results: this.state.results.concat( res.data.data )  // [].concat(['1', '2', '3'])
-				});
-			})
+		this._handleRequest( searchQuery, this.state.offset );
 
 		this.setState( {
 			searchQuery: searchQuery
@@ -42,12 +45,7 @@ export default class App extends Component {
 
 		let offset = this.state.offset + this.state.limit;
 
-		axios.get(`http://api.giphy.com/v1/gifs/search?q=${ this.state.searchQuery }&api_key=${ API_KEY }&fmt=json&offset=${ offset }&limit=${ this.state.limit }`)
-			.then( ( res ) => {
-				this.setState({
-					results: this.state.results.concat( res.data.data ) // ['1', '2', '3'].conat(['4', '5', '6'])
-				});
-			})
+		this._handleRequest( this.state.searchQuery, offset );
 
 		this.setState({
 			offset: offset
