@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import SearchBar from '../presentational/SearchBar';
 import SearchResultItem from '../presentational/SearchResultItem';
-import SearchResultLoader from '../presentational/SearchResultLoader';
+import SearchResultButtons from '../presentational/SearchResultButtons';
 
 
 
@@ -24,7 +24,7 @@ export default class SearchResults extends Component {
 				  <div className='search-results-list'>
 					{ listItems }
 
-					{ results.length > 0 ? <SearchResultLoader handleLoader={ this.props.handleLoader } /> : null }
+					{ results.length > 0 ? <SearchResultButtons handleLoader={ this.props.handleLoader } /> : null }
 				  </div>
 		    </div>
 		)
