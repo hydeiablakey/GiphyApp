@@ -14,7 +14,6 @@ export default class SearchResults extends Component {
 	render() {
 		let { results } = this.props;
 		
-		// use ternary operation
 		const listItems = results.map( ( item ) => (
 			<SearchResultItem key={ `fun_${ Math.random() * (new Date()) }` } imageSrc={ item.images.original.url } />
 		) );
