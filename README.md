@@ -1,6 +1,9 @@
 GiphyApp
 ======
+
 This is a app that allows the user to search for any GIFS using their own specified keywords from [GIPHY](https://giphy.com/)
+
+[**Click here for a preview**](http://oi63.tinypic.com/107t1ea.jpg)
 
 
 Getting Started
