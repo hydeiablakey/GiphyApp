@@ -4,7 +4,6 @@ body {
 	  animation: bg-change 10s infinite; 
 	  -webkit-animation: bg-change 10s infinite;
 	  font-family: 'Lato', sans-serif;
-
 }
 
 /* Background color change 
@@ -33,19 +32,17 @@ img {
 	border: 1px solid;
 	width: 300px;
 	box-shadow: -2px 2px 28px 0px rgba(0, 0, 0, 0.57);
-	margin: 5px;
+	border-radius: 2px;
 
 }
 
-img:nth-child(even) {
-	height: 300px;
-}
+/*
+ Search Bar
 
+*/
 
-.containerSearchBar {
-	display:flex;
-	flex: 0;
-	justify-content: center;
+input:focus {
+	outline: none;
 }
 
 .text {
@@ -53,19 +50,50 @@ img:nth-child(even) {
 	color: black;
 }
 
+
+.containerSearchBar {
+	border: 3px solid pink;
+}
+
 .searchBar {
-
 	margin-top: 10px;
+
 	border: 1px solid black;
+
 	text-align:left; 
-	width: 800px;
+
+	width: 300px;
+
+	max-width: calc(100%-90px);
+
 	height:30px;
+
 	font-size: medium;
+
+
 }
 
-input:focus {
-	outline: none;
+.formSearchBar {
+	border: 3px solid orange;
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	flex: 1;
+
 }
+
+
+.buttonSearchBar {
+	background: linear-gradient(135deg, #355C7D 10%, #6C5B7B 25%, #C06C84 50%, #F67280 75%, #F68E80 100% );
+	border: 1px solid;
+	width: 90px;
+	height:34px;
+	position: relative;
+	top: 10px;
+
+
+}
+
 
 /* Attempt to make button gradient change
 @keyframes button-bg-change {
@@ -88,35 +116,51 @@ input:focus {
 
 */
 
-.buttonSearchBar {
-
-	background: linear-gradient(135deg, #355C7D 10%, #6C5B7B 25%, #C06C84 50%, #F67280 75%, #F68E80 100% );
-	border: 1px solid;
-	width: 90px;
-	position: relative;
-	bottom: -2px;
-	height:34px;
-}
-
-
 /*
- * Search Results
+ * Search Results 
  */
-
-
 
 .search-title {
 	text-align:center;
 
 }
-.container-search-results {
 
+.container-search-results {
+	border: solid 1px;
 }
 
+/*
+container for all search results
+*/
 .search-results-list {
 	display: flex;
 	flex: auto;
 	flex-wrap: wrap;
-	justify-content:space-evenly; 
-  	margin: 0 100px 0 100px; 
+	justify-content:space-evenly;
+  	margin: 0 200px 0 200px; 
+}
+
+.search-results__list-item:nth-child(even) img {
+
+}
+.search-results__list-item:nth-child(odd) img {
+
+}
+
+/*
+Search Results Loader
+
+*/
+
+.search-results-loader {
+	width: 100%;
+}
+
+.LoadBtn {
+	background: linear-gradient(135deg, #355C7D 10%, #6C5B7B 25%, #C06C84 50%, #F67280 75%, #F68E80 100% );
+	display: block; 
+	border: 1px solid black;
+	width: 100%;
+
+
 }
