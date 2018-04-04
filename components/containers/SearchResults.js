@@ -9,11 +9,9 @@ export default class SearchResults extends Component {
 	constructor(){
 		super();
 	}
-
-
+	
 	render() {
 		let { results } = this.props;
-		
 		const listItems = results.map( ( item ) => (
 			<SearchResultItem key={ `fun_${ Math.random() * (new Date()) }` } imageSrc={ item.images.original.url } />
 		) );
@@ -26,7 +24,7 @@ export default class SearchResults extends Component {
 
 					{ results.length > 0 ? <SearchResultButtons handleLoader={ this.props.handleLoader } /> : null }
 				  </div>
-		    </div>
+		  </div>
 		)
 	}
 }
