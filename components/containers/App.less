@@ -93,9 +93,6 @@ input:focus {
 
 }
 
-.container-search-results {
-
-}
 
 /*
 container for all search results
@@ -105,7 +102,7 @@ container for all search results
 	flex: auto;
 	flex-wrap: wrap;
 	justify-content:space-evenly;
-  	margin: 0 200px 0 200px; 
+  	margin: 0 150px; 
 }
 
 
@@ -148,4 +145,10 @@ a:visited {
 .textBackToTop {
 	position: relative;
 	top: 6px;
+}
+
+@media screen and ( max-width:400px ) {
+	.search-results-list {
+		margin: 0;
+	}
 }
