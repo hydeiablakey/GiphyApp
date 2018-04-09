@@ -13,7 +13,7 @@ export default class SearchResults extends Component {
 	render() {
 		let { results } = this.props;
 		const listItems = results.map( ( item ) => (
-			<SearchResultItem key={ `fun_${ Math.random() * (new Date()) }` } imageSrc={ item.images.original.url } />
+			<SearchResultItem key={ `Arigato_${ Math.random() * (new Date()) }` } imageSrc={ item.images.original.url } />
 		) );
 
 		return (
