@@ -1,6 +1,8 @@
 GiphyApp
 =======
 
+![alt text](https://github.com/hydeiablakey/GiphyApp/blob/master/img/giphy_demo.png)
+
 This is a app that allows the user to search for any GIFS using their own specified keywords using [GIPHY](https://giphy.com/)
 
 Getting Started
