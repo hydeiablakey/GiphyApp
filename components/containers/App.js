@@ -4,7 +4,7 @@ import SearchBar from '../presentational/SearchBar';
 import SearchResults from './SearchResults';
 import './App.less';
 
-const API_KEY = 'UidqL9grHHxhpKkNEj34UYzWGlROX85q';
+const API_KEY = '(Your Key Here)';
 
 export default class App extends Component {
 	constructor() {
