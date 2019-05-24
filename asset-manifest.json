@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GiphyApp/static/css/main.9fe86986.chunk.css",
+    "main.js": "/GiphyApp/static/js/main.4c735bce.chunk.js",
+    "main.js.map": "/GiphyApp/static/js/main.4c735bce.chunk.js.map",
+    "runtime~main.js": "/GiphyApp/static/js/runtime~main.9097baa5.js",
+    "runtime~main.js.map": "/GiphyApp/static/js/runtime~main.9097baa5.js.map",
+    "static/js/2.76a3cfbb.chunk.js": "/GiphyApp/static/js/2.76a3cfbb.chunk.js",
+    "static/js/2.76a3cfbb.chunk.js.map": "/GiphyApp/static/js/2.76a3cfbb.chunk.js.map",
+    "index.html": "/GiphyApp/index.html",
+    "precache-manifest.19e2421cc51b322fa28010471ba33182.js": "/GiphyApp/precache-manifest.19e2421cc51b322fa28010471ba33182.js",
+    "service-worker.js": "/GiphyApp/service-worker.js",
+    "static/css/main.9fe86986.chunk.css.map": "/GiphyApp/static/css/main.9fe86986.chunk.css.map"
+  }
+}
