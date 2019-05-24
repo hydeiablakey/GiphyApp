@@ -17,22 +17,22 @@ npm install or npm i
 ```
 Begin Running the Application:
 ```
-npm run dev 
+npm start
 ```
 
-Afterwards you should be ready to start using and running the Giphy App here: [localhost:8080/](http://localhost:8080/)
+Afterwards you should be ready to start using and running the Giphy App here: [localhost:3000/](http://localhost:3000/)
 
 Dependencies 
 -----
 ```
+    "@material-ui/core": "^4.0.0-rc.0",
     "axios": "^0.18.0",
-    "node-fetch": "^2.1.1",
-    "normalize.css": "^8.0.0",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
-    "webpack": "3.10.0",
-    "webpack-cli": "2.0.9",
-    "webpack-dev-server": "3.0.0"
+    "gh-pages": "^2.0.1",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
 
 ```
 

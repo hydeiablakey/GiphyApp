@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import SearchBar from '../presentational/SearchBar';
+import SearchBar from './SearchBar';
 import SearchResults from './SearchResults';
-import './App.less';
+import './App.css';
 
-const API_KEY = '(Your Key Here)';
+const API_KEY = 'UidqL9grHHxhpKkNEj34UYzWGlROX85q';
 
 export default class App extends Component {
 	constructor() {
@@ -18,7 +18,7 @@ export default class App extends Component {
 	}
 
 	_handleRequest = ( query, offset, newQuery ) => {
-	axios.get(`http://api.giphy.com/v1/gifs/search?q=${ query }&api_key=${ API_KEY }&fmt=json&offset=${ offset }&limit=${ this.state.limit }`)
+	axios.get(`https://api.giphy.com/v1/gifs/search?q=${ query }&api_key=${ API_KEY }&fmt=json&offset=${ offset }&limit=${ this.state.limit }`)
 		.then( ( res ) => {
 			if (newQuery) {
 				this.setState({

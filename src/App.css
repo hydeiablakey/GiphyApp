@@ -1,0 +1,132 @@
+body {
+  background: #355C7D;
+  animation: bg-change 10s infinite;
+  -webkit-animation: bg-change 10s infinite;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Background color change */
+
+@keyframes bg-change {
+  0% {background-color: #355C7D }
+  25% {background-color: #6C5B7B }
+  50% {background-color: #C06C84 }
+  75% {background-color: #F67280 }
+  100% {background-color: #355C7D}
+
+}
+
+@-webkit-keyframes bg-change {
+  0% {background-color: #355C7D  }
+  25% {background-color: #6C5B7B }
+  50% {background-color: #C06C84 }
+  75% {background-color: #F67280 }
+  100% {background-color: #355C7D }
+}
+
+img {
+  border: 1px solid;
+  width: 300px;
+  box-shadow: -2px 2px 28px 0px rgba(0, 0, 0, 0.57);
+  border-radius: 2px;
+  margin: 5px;
+
+}
+
+/* Search Bar */
+
+input:focus {
+  outline: none;
+}
+
+.searchBtntext {
+  font-size: 2em;
+  color: black;
+}
+
+.searchBar {
+  margin-top: 10px;
+  border: 1px solid black;
+  text-align:left;
+  width: 300px;
+  max-width: calc(100%-90px);
+  height:30px;
+  font-size: medium;
+
+
+}
+
+.formSearchBar {
+
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex: 1;
+
+}
+
+
+.buttonSearchBar {
+  background: linear-gradient(135deg, #355C7D 10%, #6C5B7B 25%, #C06C84 50%, #F67280 75%, #F68E80 100% );
+  border: 1px solid;
+  width: 90px;
+  height:34px;
+  position: relative;
+  top: 10px;
+
+
+}
+
+
+
+/*
+ * Search Results
+ */
+
+.search-title {
+  text-align:center;
+
+}
+
+
+/* Container for all search results */
+.search-results-list {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  margin: 0 150px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color:black;
+}
+
+@media screen and ( max-width:400px ) {
+  .search-results-list {
+    margin: 0;
+  }
+}
+
+
+.BacktoTopBtn {
+	background-color: white;
+	border: 1px solid black;
+	width: 50%;
+	height:29px;
+	text-align:center;
+	font-family: 'Lato';
+	font-size: 12px;
+
+}
+
+.textBackToTop {
+	position: relative;
+	top: 6px;
+}
