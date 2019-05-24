@@ -7,11 +7,13 @@ This is a app that allows the user to search for any GIFS using their own specif
 
 Getting Started
 -----
-To get started with this app, you can begin by cloning the `GiphyApp`.
+The easiest way to get started is to begin viewing the project [here](https://hydeiablakey.github.io/GiphyApp/)
+
+You can also get started with this app via server by: cloning the `GiphyApp`.
 ```
 git clone https://github.com/hydeiablakey/GiphyApp.git && cd giphyApp
 ```
-Install the Dependencies:
+Installing the Dependencies:
 ```
 npm install or npm i
 ```
